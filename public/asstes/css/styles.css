@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url(../font/Vazir.ttf) format('ttf');
+  src: url(../font/Vazir-Bold.eot) format('eot');
+  src: url(../font/Vazir.woff) format('woff');
+  src: url(../font/Vazir.woff2) format('woff2');
+}
+
+body {
+  font-family: 'vazir';
+  direction: rtl;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sidebarIsActive li {
+  background-color: blueviolet;
+  color: black;
+}
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+thead th,
+tbody th {
+  color: #fff;
+}
+
+tbody td {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+}
+.active_li a {
+  background-color: #7db5e9;
+  color: black;
+}
