@@ -14,6 +14,16 @@ const Sidebar = () => {
                         اسلایدر
                     </NavLink>
                 </li>
+                <li className="list-group-item ">
+                    <NavLink
+                        className={(isActive) => {
+                            isActive ? 'active_li' : '';
+                        }}
+                        to="/register"
+                    >
+                        ثبت نام
+                    </NavLink>
+                </li>
                 <li className="list-group-item">
                     <NavLink
                         className={({isActive}) => {

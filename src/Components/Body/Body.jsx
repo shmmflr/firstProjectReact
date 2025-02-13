@@ -6,11 +6,13 @@ import AddOrEditUser from '../User/AddOrEditUser';
 import HeaderUserSection from '../User/HeaderUserSection';
 import Counter from "../Counter/Counter.jsx";
 import AddOrEditPost from "../Post/AddOrEditPost";
+import Register from "../Signin/Register.jsx";
 
 const Body = () => {
     return (<div className="col-8 mt-4 p-2">
         <Routes>
             <Route index element={<Slider/>}/>
+            <Route path="/register" element={<Register/>}/>
             <Route path="/users" element={<Users/>}/>
             <Route path="/user" element={<AddOrEditUser/>}>
                 <Route path="create" element={<HeaderUserSection/>}/>
